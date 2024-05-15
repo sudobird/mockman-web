@@ -1,0 +1,26 @@
+import { Callout } from 'nextra/components'
+
+# Mock Response
+Requests generating from xmlHTTP object or fetch will be mocked. 
+Generally all external http packages like axios, superagent etc. are wrappers around either of the two methods. 
+So all requests will be mocked. 
+
+<Callout>
+  Rules work on first match basis. If more than one rule satisfies matching conditions, 
+the first rule that matches and is active will respond. 
+</Callout>
+
+![Mock Response](/images/mock/rule-create.png)
+
+- Create, modify, search and activate rules from this dashboard. 
+- List of rules will appear on the left with a search field. 
+- Whole mocking can be toggled On/Off from the global power button on the top right corner. 
+
+### Power 
+Use this button to toggle global mocking. 
+
+![Power ON](/images/mock/power-on.png)
+
+After turning off, the main section fill fade and no rules shall work now. 
+![Power OFF](/images/mock/power-off.png)
+

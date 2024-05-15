@@ -1,0 +1,59 @@
+import Image from 'next/image'
+
+# Create Mock Rule
+Click on **Reset / New +** to start creating a new mock response rule. 
+
+![Create Mock Response](/images/mock/rule-create.png)
+
+After configuring the following parameters hit save. 
+
+## Parameters
+
+### Regex toggle
+Use this button to toggle regex based url matching.
+<Image src="/images/mock/regex-toggle.png" alt="regex toggle button" width={300} height={200} />
+
+### URL
+Enter the URL of the request that you want to mock. You can specify the exact URL or use regular expressions for pattern matching.
+
+Url with regex
+<Image src="/images/mock/regex-url.png" alt="Url with regex" width={400} height={200} />
+
+Absolute url
+<Image src="/images/mock/absolute-url.png" alt="Absolute url" width={400} height={200} />
+
+
+### Method
+Select the HTTP method (GET, POST, PUT, DELETE, etc.) of the request. Default is GET.
+<Image src="/images/mock/method.png" alt="Method Select" width={150} height={200} />
+
+### Status Code
+Specify the HTTP status code to be returned in the mock response. Default will be 200 (OK)
+<Image src="/images/mock/status.png" alt="Status code" width={150} height={200} />
+
+### Delay
+Specify the delay (in milliseconds) before the mock response is sent. This parameter is optional. Defaults to 0.
+<Image src="/images/mock/delay.png" alt="Delay" width={200} height={300} />
+
+
+### Label
+Provide a label or identifier for the mock response. This parameter is optional. 
+This will come in handy if you have multiple requests with same url but with different responses.
+Specify different labels and activate / deactivate accordingly.
+
+Specify label from here. 
+<Image src="/images/mock/label.png" alt="Label" width={300} height={200} />
+
+Label will be visible in rules list like this: 
+<Image src="/images/mock/label-visible.png" alt="Label in rule tile" width={400} height={300} />
+
+### Response Body
+Enter the desired response content in JSON format or raw text.
+<Image src="/images/mock/json-response.png" alt="Response body" width={500} height={300} />
+
+### Response Headers
+- Click on the Resp Headers tab to configure Response headers. 
+- Add, edit and remove response headers here. 
+- Headers can be activated / deactivated based on use case. 
+
+![Mock Response Headers](/images/mock/rule-resp-headers-sc.png)

@@ -1,0 +1,63 @@
+# Overview
+The Ajax Mock Response Chrome Extension is a tool designed to facilitate the mocking of AJAX responses during web development. With this extension, developers can simulate server responses to specific AJAX requests, aiding in the testing and development process.
+
+# Installation
+- Navigate to the Chrome Web Store and search for "Ajax Mock Response" or access the direct link here.
+- Click on the "Add to Chrome" button to install the extension.
+- Once installed, the extension icon will appear in the Chrome toolbar.
+
+# Usage
+
+## Accessing the Extension
+Click on the extension icon in the Chrome toolbar to open the extension page.
+
+## Configuring Mock Responses
+- URL: Enter the URL of the AJAX request that you want to mock.
+- Method: Select the HTTP method (GET, POST, PUT, DELETE, etc.) of the AJAX request.
+- Delay: Specify the delay (in milliseconds) before the mock response is sent.
+- Label: Provide a label or identifier for the mock response (optional).
+- Response: Enter the desired response content in JSON format or raw text.
+
+## Adding Mock Responses
+Fill in the required parameters for the mock response.
+Click on the "Add Mock Response" button to save the configuration.
+
+## Editing Mock Responses
+Click on the "Edit" button next to the mock response you want to modify.
+Update the parameters as needed.
+Click on the "Save Changes" button to apply the modifications.
+
+## Deleting Mock Responses
+Click on the "Delete" button next to the mock response you want to remove.
+Confirm the deletion when prompted.
+
+## Activating/Deactivating Mocking
+Toggle the "Enable Mocking" switch to activate or deactivate the mocking functionality. When activated, the extension will intercept AJAX requests to the specified URLs and respond with the configured mock responses.
+
+# Examples
+##Mocking a GET Request
+URL: https://api.example.com/data
+Method: GET
+Delay: 1000 ms
+Response:
+
+```json
+Copy code
+{
+  "id": 1,
+  "name": "Mock Data",
+  "value": 42
+}
+```
+
+## Mocking a POST Request
+URL: https://api.example.com/save
+Method: POST
+Delay: 500 ms
+Response: Data saved successfully.
+
+Troubleshooting
+If you encounter any issues or have questions about the extension, please refer to the FAQ section or contact our support team at support@example.com.
+
+Feedback and Contributions
+We welcome feedback and contributions from the community. If you have suggestions for improving the extension or would like to report a bug, please submit an issue on our GitHub repository.
