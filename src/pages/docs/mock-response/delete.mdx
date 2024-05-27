@@ -1,6 +1,13 @@
 import Image from 'next/image'
+import { Callout } from 'nextra/components'
 
 # Delete Rule
-Rule can be deactivated from sidebar or can be removed entirly from the store using the trash icon on each rule tile. 
+- Rule can be removed / deleted using this trash icon in the rule tile.
+- There's no confirmation for deleting a rule. 1 click will remove the rule from the store. 
 
-<Image src="/images/mock/rule-delete.gif" alt="Rule Delete icon" width={400} height={200} />
+<Image src="/images/mock/rule-delete.png" alt="Rule Delete icon" width={400} height={200} />
+
+<Callout>
+  It is generally advised to deactivate a rule when not in use instead of deleting it entirely.
+</Callout>
+

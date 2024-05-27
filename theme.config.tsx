@@ -5,7 +5,33 @@ const theme = {
   project: {
     link: 'https://github.com/shuding/nextra'
   },
-  // ... other theme options
+  editLink: {
+    component: () => null
+  },
+  footer: {
+    component: () => null
+  },
+  sidebar: {
+    titleComponent({ title, type }: any) {
+
+      // if (type === 'separator') {
+      //   return (
+      //     <div style={{ background: 'cyan', textAlign: 'center' }}>{title}</div>
+      //   )
+      // }
+      
+      if (title === 'Create') {
+        return <>➕ {title}</>
+      }
+      if (title === 'Delete') {
+        return <>🗑️ {title}</>
+      }
+      if (title === 'Update') {
+        return <>✎ {title}</>
+      }
+      return <>{title}</>
+    }
+  }
 }
 
 export default theme;
