@@ -3,10 +3,11 @@ import { useRouter } from 'next/router'
 import { useConfig } from 'nextra-theme-docs'
 
 const theme = {
-  logo: <h2 style={{display: 'flex', gap: '5px'}}><Image src="/images/icon-dark.png" alt="Logo" height={18} width={24} />Mockman</h2>,
+  logo: <h2 style={{display: 'flex', gap: '5px'}}><Image src="/images/icon.png" alt="Logo" height={18} width={24} /> MOCKMAN</h2>,
   project: {
-    link: 'https://github.com/shuding/nextra'
+    link: 'https://github.com/sudobird/mockman-web'
   },
+  docsRepositoryBase: 'https://github.com/sudobird/mockman-web',
   editLink: {
     component: () => null
   },
@@ -28,7 +29,7 @@ const theme = {
         {
           rel: 'icon',
           type: "image/x-icon",
-          href: '/images/icon-dark.png'
+          href: '/images/icon.png'
         }
       ],
       openGraph: {
@@ -60,7 +61,7 @@ const theme = {
           content={'Mockman docs containing parameters to configure mocking rules for xhr requests.'}
         />
         <meta property="og:image" content="/images/mock/rule-create.png" />
-        <link rel="icon" type="image/x-icon" href="/images/icon-dark.png"></link>
+        <link rel="icon" type="image/x-icon" href="/images/icon.png"></link>
       </>
     )
   },
